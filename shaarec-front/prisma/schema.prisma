@@ -1,0 +1,337 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+// ──────────────────────────────────────
+// Auth & Utilisateurs
+// ──────────────────────────────────────
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String?
+  passwordHash String?
+  image        String?
+  role         UserRole @default(DONOR)
+  locale       String   @default("fr")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  accounts Account[]
+  sessions Session[]
+  donations Donation[]
+  comments  Comment[]
+  articles  Article[] @relation("ArticleAuthor")
+
+  @@map("users")
+}
+
+enum UserRole {
+  ADMIN
+  DONOR
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+// ──────────────────────────────────────
+// Campagnes & Dons
+// ──────────────────────────────────────
+
+model Campaign {
+  id         String         @id @default(cuid())
+  status     CampaignStatus @default(DRAFT)
+  goalAmount Decimal        @db.Decimal(10, 2)
+  startDate  DateTime
+  endDate    DateTime
+  createdAt  DateTime       @default(now())
+  updatedAt  DateTime       @updatedAt
+
+  translations CampaignTranslation[]
+  donations    Donation[]
+
+  @@map("campaigns")
+}
+
+enum CampaignStatus {
+  DRAFT
+  ACTIVE
+  CLOSED
+}
+
+model CampaignTranslation {
+  id          String @id @default(cuid())
+  campaignId  String
+  locale      String @db.VarChar(5)
+  title       String
+  description String @db.Text
+
+  campaign Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+
+  @@unique([campaignId, locale])
+  @@map("campaign_translations")
+}
+
+model DonationPack {
+  id        String   @id @default(cuid())
+  position  Int      @default(0)
+  amount    Decimal  @db.Decimal(10, 2)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  translations DonationPackTranslation[]
+  donations    Donation[]
+
+  @@map("donation_packs")
+}
+
+model DonationPackTranslation {
+  id          String @id @default(cuid())
+  packId      String
+  locale      String @db.VarChar(5)
+  name        String
+  description String @db.Text
+
+  pack DonationPack @relation(fields: [packId], references: [id], onDelete: Cascade)
+
+  @@unique([packId, locale])
+  @@map("donation_pack_translations")
+}
+
+model Donation {
+  id              String         @id @default(cuid())
+  userId          String
+  campaignId      String?
+  packId          String?
+  amount          Decimal        @db.Decimal(10, 2)
+  currency        String         @default("EUR") @db.VarChar(3)
+  type            DonationType
+  status          DonationStatus @default(PENDING)
+  stripePaymentId String?        @unique
+  stripeInvoiceId String?
+  createdAt       DateTime       @default(now())
+
+  user     User          @relation(fields: [userId], references: [id])
+  campaign Campaign?     @relation(fields: [campaignId], references: [id])
+  pack     DonationPack? @relation(fields: [packId], references: [id])
+  receipt  FiscalReceipt?
+
+  @@index([userId])
+  @@index([campaignId])
+  @@map("donations")
+}
+
+enum DonationType {
+  ONE_TIME
+  RECURRING
+}
+
+enum DonationStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+model Subscription {
+  id                   String             @id @default(cuid())
+  userId               String
+  stripeSubscriptionId String             @unique
+  stripePriceId        String
+  amount               Decimal            @db.Decimal(10, 2)
+  currency             String             @default("EUR") @db.VarChar(3)
+  status               SubscriptionStatus @default(ACTIVE)
+  currentPeriodEnd     DateTime
+  createdAt            DateTime           @default(now())
+  updatedAt            DateTime           @updatedAt
+
+  @@index([userId])
+  @@map("subscriptions")
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  CANCELLED
+  PAST_DUE
+}
+
+model FiscalReceipt {
+  id          String   @id @default(cuid())
+  donationId  String   @unique
+  filePath    String
+  generatedAt DateTime @default(now())
+
+  donation Donation @relation(fields: [donationId], references: [id])
+
+  @@map("fiscal_receipts")
+}
+
+// ──────────────────────────────────────
+// Blog
+// ──────────────────────────────────────
+
+model Article {
+  id          String        @id @default(cuid())
+  authorId    String
+  slug        String        @unique
+  coverImage  String?
+  status      ArticleStatus @default(DRAFT)
+  views       Int           @default(0)
+  readingTime Int           @default(0)
+  publishedAt DateTime?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  author       User                 @relation("ArticleAuthor", fields: [authorId], references: [id])
+  translations ArticleTranslation[]
+  comments     Comment[]
+
+  @@map("articles")
+}
+
+enum ArticleStatus {
+  DRAFT
+  PUBLISHED
+}
+
+model ArticleTranslation {
+  id        String @id @default(cuid())
+  articleId String
+  locale    String @db.VarChar(5)
+  title     String
+  excerpt   String @db.Text
+  content   String @db.LongText
+
+  article Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@unique([articleId, locale])
+  @@map("article_translations")
+}
+
+model Comment {
+  id        String        @id @default(cuid())
+  articleId String
+  userId    String?
+  name      String
+  email     String
+  content   String        @db.Text
+  status    CommentStatus @default(PENDING)
+  createdAt DateTime      @default(now())
+
+  article Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  user    User?   @relation(fields: [userId], references: [id])
+
+  @@index([articleId])
+  @@map("comments")
+}
+
+enum CommentStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+// ──────────────────────────────────────
+// Rapports d'impact
+// ──────────────────────────────────────
+
+model ImpactReport {
+  id        String   @id @default(cuid())
+  quarter   String   @unique @db.VarChar(7) // ex: "2026-Q1"
+  filePath  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  translations ImpactReportTranslation[]
+
+  @@map("impact_reports")
+}
+
+model ImpactReportTranslation {
+  id       String @id @default(cuid())
+  reportId String
+  locale   String @db.VarChar(5)
+  title    String
+  content  String @db.LongText
+
+  report ImpactReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+
+  @@unique([reportId, locale])
+  @@map("impact_report_translations")
+}
+
+// ──────────────────────────────────────
+// Contact
+// ──────────────────────────────────────
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String   @db.Text
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("contact_messages")
+}
+
+// ──────────────────────────────────────
+// Pages CMS
+// ──────────────────────────────────────
+
+model Page {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  updatedAt DateTime @updatedAt
+
+  translations PageTranslation[]
+
+  @@map("pages")
+}
+
+model PageTranslation {
+  id      String @id @default(cuid())
+  pageId  String
+  locale  String @db.VarChar(5)
+  title   String
+  content String @db.LongText
+
+  page Page @relation(fields: [pageId], references: [id], onDelete: Cascade)
+
+  @@unique([pageId, locale])
+  @@map("page_translations")
+}

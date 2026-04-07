@@ -1,0 +1,29 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss";
+@import "@heroui/styles";
+@import "../themes/shaarec.css" layer(theme);
+
+/* ── Custom semantic colors ── */
+@theme inline {
+  /* Couleurs SHAAREC étendues */
+  --color-sand: oklch(0.92 0.025 75);
+  --color-sand-light: oklch(0.96 0.012 75);
+  --color-sand-dark: oklch(0.82 0.035 70);
+  --color-oasis: oklch(0.52 0.14 155);
+  --color-oasis-light: oklch(0.72 0.10 155);
+  --color-oasis-dark: oklch(0.38 0.12 155);
+  --color-earth: oklch(0.45 0.06 55);
+  --color-earth-light: oklch(0.60 0.05 55);
+  --color-sahara: oklch(0.78 0.10 72);
+
+  /* Typographie */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ── Base styles ── */
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
