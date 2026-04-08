@@ -1,1 +1,81 @@
-{}
+{
+  "nav": { "about": "Over ons", "impact": "Impact", "methodology": "Programma", "donate": "Doneren", "team": "Team", "menu": "Menu" },
+  "theme": { "light": "Lichte modus", "dark": "Donkere modus" },
+  "hero": {
+    "badge": "Actieve campagne",
+    "title1": "Van",
+    "titleHighlight": "Zourgane",
+    "title2": "naar de Wereld",
+    "title3": "Excellentie Bouwen",
+    "subtitle": "Steun het onderwijs, de coaching en het leiderschap van jongeren uit een oase aan de poorten van de Sahara. Elke donatie smeedt een leider van morgen.",
+    "cta": "Doneren",
+    "ctaSecondary": "Ontdek SHAAREC",
+    "trust": { "payment": "Veilige betaling", "receipt": "Fiscaal ontvangstbewijs", "transparent": "100% transparant" }
+  },
+  "about": {
+    "tag": "Onze missie",
+    "title": "شارك — Delen, Deelnemen",
+    "subtitle": "SHAAREC begeleidt de jongeren van Zourgane naar academische excellentie en leiderschap, door hen toegang te geven tot coaching op hoog niveau.",
+    "values": {
+      "S": { "word": "Steun", "desc": "Academisch en methodologisch" },
+      "H": { "word": "Menselijk", "desc": "Het individu centraal" },
+      "A1": { "word": "Assistentie", "desc": "Logistiek en materieel" },
+      "A2": { "word": "Aanleg", "desc": "Soft Skills en Leiderschap" },
+      "R": { "word": "Veerkracht", "desc": "Kracht tegenover rurale uitdagingen" },
+      "E": { "word": "Excellentie", "desc": "Onze uitgangsstandaard" },
+      "C": { "word": "Burgerschap", "desc": "Betrokkenheid bij Zourgane" }
+    },
+    "quote": "Uw donatie is geen hulp, het is een investering in de toekomstige elite van Zourgane. Elke euro of dirham financiert direct de toegang tot technologie, coaching op hoog niveau en uitstekende educatieve middelen.",
+    "quoteAuthor": "Mohamed Aït Bajja, Oprichter"
+  },
+  "impact": {
+    "tag": "Impact",
+    "title": "Concrete resultaten",
+    "subtitle": "Als kwaliteitsexperts (QHSE) garanderen we volledige traceerbaarheid van elke donatie. Transparantie en nauwkeurigheid bij elke stap.",
+    "stats": { "students": "Begeleide studenten", "girls": "Meisjes in het programma", "partners": "Educatieve partners", "years": "Jaar humanitaire inzet" }
+  },
+  "methodology": {
+    "tag": "Programma",
+    "title": "Een methodologie van excellentie",
+    "subtitle": "Een hybride coaching die academische strengheid, soft skills en menselijke begeleiding combineert.",
+    "pillars": {
+      "academic": { "title": "Schoolondersteuning", "desc": "Wiskunde, natuurkunde, wetenschappen — toegewijde docenten om het eindexamen met excellentie voor te bereiden." },
+      "coaching": { "title": "Coaching & Leiderschap", "desc": "Soft skills, vertrouwen, ochtenddiscipline — de mentaliteit van leiders smeden." },
+      "psychology": { "title": "Psychologische begeleiding", "desc": "Individuele en collectieve ondersteuning, mentale voorbereiding op examens en het leven na het eindexamen." },
+      "orientation": { "title": "Oriëntatie na het eindexamen", "desc": "Partnerschappen om studenten naar de beste studierichtingen en kansen te begeleiden." }
+    }
+  },
+  "donate": {
+    "tag": "Doneren",
+    "title": "Kies uw impact",
+    "subtitle": "Elke bijdrage is een investering in de toekomst van Zourgane. Vrij bedrag ook mogelijk.",
+    "featured": "Hoge impact",
+    "choose": "Kiezen",
+    "freeAmountPrompt": "Liever uw eigen bedrag kiezen?",
+    "freeAmount": "Vrij bedrag",
+    "packs": {
+      "connection": { "name": "Connectie", "desc": "Steun internettoegang en digitale hulpmiddelen (webcams, tablets)." },
+      "mentorship": { "name": "Mentorschap", "desc": "Sponsor de coaching van een leider gedurende een volledig semester." },
+      "sovereignty": { "name": "Soevereiniteit", "desc": "Financier wetenschappelijke apparatuur en excellentiebeurzen." }
+    }
+  },
+  "team": {
+    "tag": "Het team",
+    "title": "De Raad van Wijzen",
+    "subtitle": "Gepassioneerde experts, verenigd door de visie van een excellente jeugd in Zourgane.",
+    "roles": { "coordinator": "Coördinator & Coach", "pedagogy": "Pedagogisch Directeur", "mentor": "Academisch Mentor" }
+  },
+  "cta": {
+    "title": "Klaar om levens te veranderen?",
+    "subtitle": "Sluit u aan bij de SHAAREC-gemeenschap en help mee aan de opbouw van een generatie leiders uit de rurale wereld.",
+    "donate": "Nu doneren",
+    "partner": "Partner worden"
+  },
+  "footer": {
+    "description": "Van Zourgane naar de Wereld: een soevereiniteit van excellentie bouwen voor de leiders van morgen.",
+    "sections": { "association": "Vereniging", "engage": "Meedoen", "legal": "Juridisch" },
+    "links": { "about": "Over ons", "team": "Het team", "methodology": "Methodologie", "transparency": "Transparantie", "donate": "Doneren", "partner": "Partner worden", "blog": "Blog", "legalNotice": "Juridische kennisgeving", "privacy": "Privacybeleid", "terms": "Gebruiksvoorwaarden" },
+    "copyright": "© {year} SHAAREC. Alle rechten voorbehouden.",
+    "legalEntity": "Franse wet 1901 vereniging — SHAAREC Frankrijk"
+  }
+}

@@ -1,1 +1,119 @@
-{}
+{
+  "nav": {
+    "about": "About",
+    "impact": "Impact",
+    "methodology": "Program",
+    "donate": "Donate",
+    "team": "Team",
+    "menu": "Menu"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "hero": {
+    "badge": "Active campaign",
+    "title1": "From",
+    "titleHighlight": "Zourgane",
+    "title2": "to the World",
+    "title3": "Building Excellence",
+    "subtitle": "Support the education, coaching and leadership of young people from an oasis at the gates of the Sahara. Every donation shapes a leader of tomorrow.",
+    "cta": "Donate",
+    "ctaSecondary": "Discover SHAAREC",
+    "trust": {
+      "payment": "Secure payment",
+      "receipt": "Tax receipt",
+      "transparent": "100% transparent"
+    }
+  },
+  "about": {
+    "tag": "Our mission",
+    "title": "شارك — Share, Participate",
+    "subtitle": "SHAAREC supports the youth of Zourgane towards academic excellence and leadership, giving them access to high-level coaching.",
+    "values": {
+      "S": { "word": "Support", "desc": "Academic and methodological" },
+      "H": { "word": "Human", "desc": "The individual at the center" },
+      "A1": { "word": "Assistance", "desc": "Logistical and material" },
+      "A2": { "word": "Aptitude", "desc": "Soft Skills and Leadership" },
+      "R": { "word": "Resilience", "desc": "Strength facing rural challenges" },
+      "E": { "word": "Excellence", "desc": "Our output standard" },
+      "C": { "word": "Citizenship", "desc": "Commitment to Zourgane" }
+    },
+    "quote": "Your donation is not charity, it's an investment in the future elite of Zourgane. Every euro or dirham directly funds access to technology, high-level coaching and excellent educational resources.",
+    "quoteAuthor": "Mohamed Aït Bajja, Founder"
+  },
+  "impact": {
+    "tag": "Impact",
+    "title": "Concrete results",
+    "subtitle": "As Quality (QHSE) experts, we guarantee full traceability of every donation. Transparency and rigor at every step.",
+    "stats": {
+      "students": "Students supported",
+      "girls": "Girls in the program",
+      "partners": "Educational partners",
+      "years": "Years of humanitarian engagement"
+    }
+  },
+  "methodology": {
+    "tag": "Program",
+    "title": "A methodology of excellence",
+    "subtitle": "A hybrid coaching approach combining academic rigor, soft skills and human support.",
+    "pillars": {
+      "academic": { "title": "Academic support", "desc": "Math, physics, science — dedicated teachers to prepare for the baccalaureate with excellence." },
+      "coaching": { "title": "Coaching & Leadership", "desc": "Soft skills, confidence, dawn discipline — forging the mindset of leaders." },
+      "psychology": { "title": "Psychological support", "desc": "Individual and group support, mental preparation for exams and post-baccalaureate life." },
+      "orientation": { "title": "Post-baccalaureate guidance", "desc": "Partnerships to guide students toward the best programs and opportunities." }
+    }
+  },
+  "donate": {
+    "tag": "Donate",
+    "title": "Choose your impact",
+    "subtitle": "Every contribution is an investment in Zourgane's future. Free amount also available.",
+    "featured": "High impact",
+    "choose": "Choose",
+    "freeAmountPrompt": "Prefer to choose your own amount?",
+    "freeAmount": "Free amount",
+    "packs": {
+      "connection": { "name": "Connection", "desc": "Support internet access and digital tools (webcams, tablets)." },
+      "mentorship": { "name": "Mentorship", "desc": "Sponsor a leader's coaching for a full semester." },
+      "sovereignty": { "name": "Sovereignty", "desc": "Fund scientific equipment and excellence scholarships." }
+    }
+  },
+  "team": {
+    "tag": "The team",
+    "title": "The Council of Sages",
+    "subtitle": "Passionate experts, united by the vision of a youth of excellence in Zourgane.",
+    "roles": {
+      "coordinator": "Coordinator & Coach",
+      "pedagogy": "Pedagogical Director",
+      "mentor": "Academic Mentor"
+    }
+  },
+  "cta": {
+    "title": "Ready to change lives?",
+    "subtitle": "Join the SHAAREC community and help build a generation of leaders from the rural world.",
+    "donate": "Donate now",
+    "partner": "Become a partner"
+  },
+  "footer": {
+    "description": "From Zourgane to the World: building a sovereignty of excellence for the leaders of tomorrow.",
+    "sections": {
+      "association": "Association",
+      "engage": "Get involved",
+      "legal": "Legal"
+    },
+    "links": {
+      "about": "About",
+      "team": "The team",
+      "methodology": "Methodology",
+      "transparency": "Transparency",
+      "donate": "Donate",
+      "partner": "Become a partner",
+      "blog": "Blog",
+      "legalNotice": "Legal notice",
+      "privacy": "Privacy policy",
+      "terms": "Terms of use"
+    },
+    "copyright": "© {year} SHAAREC. All rights reserved.",
+    "legalEntity": "French Law 1901 Association — SHAAREC France"
+  }
+}

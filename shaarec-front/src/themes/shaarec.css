@@ -56,7 +56,7 @@
     --default-foreground: var(--foreground);
 
     /* ── Accent : Vert oasis ── */
-    --accent: oklch(0.52 0.14 155);              /* Vert palmier profond */
+    --accent: oklch(0.70 0.15 155);              /* Vert oasis doux */
     --accent-foreground: var(--snow);
 
     /* ── Form Fields ── */
@@ -126,19 +126,19 @@
     --field-radius: calc(var(--radius) * 1.5);
 
     /* ── Base ── */
-    --background: oklch(0.16 0.015 55);          /* Nuit saharienne */
+    --background: oklch(0.14 0.012 55);          /* Nuit saharienne profonde */
     --foreground: oklch(0.94 0.008 75);          /* Sable clair */
 
     /* ── Surface ── */
-    --surface: oklch(0.22 0.015 55);
+    --surface: oklch(0.19 0.012 55);
     --surface-foreground: var(--foreground);
-    --surface-secondary: oklch(0.26 0.012 55);
+    --surface-secondary: oklch(0.22 0.012 55);   /* Sections alternées — visible vs background */
     --surface-secondary-foreground: var(--foreground);
-    --surface-tertiary: oklch(0.30 0.01 55);
+    --surface-tertiary: oklch(0.25 0.01 55);
     --surface-tertiary-foreground: var(--foreground);
 
-    /* ── Overlay ── */
-    --overlay: oklch(0.24 0.015 55);
+    /* ── Overlay (cards, popovers — plus clair que surface-secondary pour contraste) ── */
+    --overlay: oklch(0.28 0.015 55);
     --overlay-foreground: var(--foreground);
 
     /* ── Muted ── */

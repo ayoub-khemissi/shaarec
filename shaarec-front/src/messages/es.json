@@ -1,1 +1,91 @@
-{}
+{
+  "nav": {
+    "about": "Acerca de",
+    "impact": "Impacto",
+    "methodology": "Programa",
+    "donate": "Donar",
+    "team": "Equipo",
+    "menu": "Menú"
+  },
+  "theme": {
+    "light": "Modo claro",
+    "dark": "Modo oscuro"
+  },
+  "hero": {
+    "badge": "Campaña activa",
+    "title1": "De",
+    "titleHighlight": "Zourgane",
+    "title2": "al Mundo",
+    "title3": "Construir la Excelencia",
+    "subtitle": "Apoyen la educación, el coaching y el liderazgo de los jóvenes de un oasis a las puertas del Sahara. Cada donación forja un líder del mañana.",
+    "cta": "Donar",
+    "ctaSecondary": "Descubrir SHAAREC",
+    "trust": { "payment": "Pago seguro", "receipt": "Recibo fiscal", "transparent": "100% transparente" }
+  },
+  "about": {
+    "tag": "Nuestra misión",
+    "title": "شارك — Compartir, Participar",
+    "subtitle": "SHAAREC acompaña a los jóvenes de Zourgane hacia la excelencia académica y el liderazgo, dándoles acceso a un coaching de alto nivel.",
+    "values": {
+      "S": { "word": "Apoyo", "desc": "Académico y metodológico" },
+      "H": { "word": "Humano", "desc": "El individuo en el centro" },
+      "A1": { "word": "Asistencia", "desc": "Logística y material" },
+      "A2": { "word": "Aptitud", "desc": "Habilidades blandas y Liderazgo" },
+      "R": { "word": "Resiliencia", "desc": "Fortaleza frente a los desafíos rurales" },
+      "E": { "word": "Excelencia", "desc": "Nuestro estándar de salida" },
+      "C": { "word": "Ciudadanía", "desc": "Compromiso con Zourgane" }
+    },
+    "quote": "Su donación no es una ayuda, es una inversión en la futura élite de Zourgane. Cada euro o dírham financia directamente el acceso a la tecnología, al coaching de alto nivel y a los recursos educativos de excelencia.",
+    "quoteAuthor": "Mohamed Aït Bajja, Fundador"
+  },
+  "impact": {
+    "tag": "Impacto",
+    "title": "Resultados concretos",
+    "subtitle": "Como expertos en Calidad (QHSE), garantizamos una trazabilidad total de cada donación. Transparencia y rigor en cada etapa.",
+    "stats": { "students": "Estudiantes acompañados", "girls": "Chicas en el programa", "partners": "Socios educativos", "years": "Años de compromiso humanitario" }
+  },
+  "methodology": {
+    "tag": "Programa",
+    "title": "Una metodología de excelencia",
+    "subtitle": "Un coaching híbrido que combina rigor académico, habilidades blandas y acompañamiento humano.",
+    "pillars": {
+      "academic": { "title": "Apoyo escolar", "desc": "Matemáticas, física, ciencias — profesores dedicados para preparar el bachillerato con excelencia." },
+      "coaching": { "title": "Coaching y Liderazgo", "desc": "Habilidades blandas, confianza, disciplina del alba — forjar la mentalidad de líderes." },
+      "psychology": { "title": "Acompañamiento psicológico", "desc": "Apoyo individual y colectivo, preparación mental para los exámenes y la vida post-bachillerato." },
+      "orientation": { "title": "Orientación post-bachillerato", "desc": "Alianzas para guiar a los estudiantes hacia las mejores carreras y oportunidades." }
+    }
+  },
+  "donate": {
+    "tag": "Donar",
+    "title": "Elija su impacto",
+    "subtitle": "Cada contribución es una inversión en el futuro de Zourgane. Monto libre también disponible.",
+    "featured": "Alto impacto",
+    "choose": "Elegir",
+    "freeAmountPrompt": "¿Prefiere elegir su monto?",
+    "freeAmount": "Monto libre",
+    "packs": {
+      "connection": { "name": "Conexión", "desc": "Apoyar el acceso a internet y herramientas digitales (cámaras, tabletas)." },
+      "mentorship": { "name": "Mentoría", "desc": "Apadrinar el coaching de un líder durante un semestre completo." },
+      "sovereignty": { "name": "Soberanía", "desc": "Financiar el material científico y las becas de excelencia." }
+    }
+  },
+  "team": {
+    "tag": "El equipo",
+    "title": "El Consejo de Sabios",
+    "subtitle": "Expertos apasionados, unidos por la visión de una juventud de excelencia en Zourgane.",
+    "roles": { "coordinator": "Coordinador y Coach", "pedagogy": "Dirección Pedagógica", "mentor": "Mentor Académico" }
+  },
+  "cta": {
+    "title": "¿Listo para cambiar vidas?",
+    "subtitle": "Únase a la comunidad SHAAREC y participe en la construcción de una generación de líderes del mundo rural.",
+    "donate": "Donar ahora",
+    "partner": "Ser socio"
+  },
+  "footer": {
+    "description": "De Zourgane al Mundo: construir una soberanía de la excelencia para los líderes del mañana.",
+    "sections": { "association": "Asociación", "engage": "Participar", "legal": "Legal" },
+    "links": { "about": "Acerca de", "team": "El equipo", "methodology": "Metodología", "transparency": "Transparencia", "donate": "Donar", "partner": "Ser socio", "blog": "Blog", "legalNotice": "Aviso legal", "privacy": "Política de privacidad", "terms": "Condiciones de uso" },
+    "copyright": "© {year} SHAAREC. Todos los derechos reservados.",
+    "legalEntity": "Asociación ley 1901 — SHAAREC Francia"
+  }
+}

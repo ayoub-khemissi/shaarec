@@ -4,7 +4,7 @@
 @import "@heroui/styles";
 @import "../themes/shaarec.css" layer(theme);
 
-/* ── Custom semantic colors ── */
+/* ── Custom semantic colors & typography ── */
 @theme inline {
   /* Couleurs SHAAREC étendues */
   --color-sand: oklch(0.92 0.025 75);
@@ -15,15 +15,42 @@
   --color-oasis-dark: oklch(0.38 0.12 155);
   --color-earth: oklch(0.45 0.06 55);
   --color-earth-light: oklch(0.60 0.05 55);
-  --color-sahara: oklch(0.78 0.10 72);
+  --color-sahara: oklch(0.75 0.18 55);
 
-  /* Typographie */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Typographie — Latin: Sora (titres) + Lexend (body) */
+  --font-heading: var(--font-heading), "Sora", sans-serif;
+  --font-sans: var(--font-body), "Inter", sans-serif;
 }
 
 /* ── Base styles ── */
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* ── Snap container (desktop) ── */
+@media (min-width: 1024px) {
+  .snap-container {
+    overflow-y: auto;
+    height: 100dvh;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* ── RTL Arabic fonts ── */
+[dir="rtl"] body {
+  font-family: var(--font-body-ar), "Readex Pro", sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  font-family: var(--font-heading-ar), "IBM Plex Sans Arabic", sans-serif;
 }
