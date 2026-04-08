@@ -1,14 +1,13 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { locales, localeNames, type Locale } from "@/i18n/config";
 import { GlobeIcon, ChevronDownIcon } from "@/components/ui/Icons";
 
 export function LanguageSwitcher() {
   const locale = useLocale() as Locale;
-  const router = useRouter();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -21,15 +20,14 @@ export function LanguageSwitcher() {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  const switchLocale = (newLocale: Locale) => {
+  const getLocalePath = (newLocale: Locale) => {
     const segments = pathname.split("/");
     if (locales.includes(segments[1] as Locale)) {
       segments[1] = newLocale;
     } else {
       segments.splice(1, 0, newLocale);
     }
-    router.push(segments.join("/") || "/");
-    setOpen(false);
+    return segments.join("/") || "/";
   };
 
   return (
@@ -50,15 +48,15 @@ export function LanguageSwitcher() {
           bg-overlay/80 backdrop-blur-xl border border-border/50
           shadow-overlay overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
           {locales.map((l) => (
-            <button
+            <a
               key={l}
-              onClick={() => switchLocale(l)}
-              className={`w-full px-4 py-2.5 text-start text-sm transition-colors cursor-pointer
+              href={getLocalePath(l)}
+              className={`block px-4 py-2.5 text-start text-sm transition-colors
                 hover:bg-default/60
                 ${l === locale ? "text-accent font-medium" : "text-foreground"}`}
             >
               {localeNames[l]}
-            </button>
+            </a>
           ))}
         </div>
       )}

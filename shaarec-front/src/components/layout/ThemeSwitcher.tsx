@@ -8,6 +8,7 @@ import { SunIcon, MoonIcon } from "@/components/ui/Icons";
 export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const t = useTranslations("theme");
 
   useEffect(() => setMounted(true), []);
 
@@ -15,7 +16,6 @@ export function ThemeSwitcher() {
     return <div className="size-9" />;
   }
 
-  const t = useTranslations("theme");
   const isDark = theme === "shaarec-dark";
 
   return (
