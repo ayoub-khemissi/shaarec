@@ -1,6 +1,54 @@
 {
   "nav": { "about": "ⵅⴼ ⵏⵏⵖ", "impact": "ⴰⵙⵙⵎⵔⵙ", "methodology": "ⴰⵖⴰⵡⴰⵙ", "donate": "ⴼⴽ", "team": "ⵜⴰⵔⴰⴱⴱⵓⵜ", "menu": "ⴰⴼⴼⵉⵔ" },
   "theme": { "light": "ⴰⵙⴽⴽⵉⵏ ⴰⵣⴷⴷⴰⴳ", "dark": "ⴰⵙⴽⴽⵉⵏ ⴰⴱⵔⴽⴰⵏ" },
+  "donor": {
+    "nav": {
+      "dashboard": "ⵜⴰⵙⵏⴰ ⵏ ⵓⵙⵙⵓⴷⵓ",
+      "donations": "ⵜⵉⵜⵉⴽⴽⵉⵏ ⵉⵏⵓ",
+      "receipts": "ⵉⵙⵎⵏⵉⴷⵏ ⵏ ⵜⴼⵉⵙⴽⴰⵍ",
+      "reports": "ⵉⵏⴱⵍⵏ ⵏ ⵓⵙⵙⵎⵔⵙ",
+      "logout": "ⴼⴼⵖ"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "ⴰⵏⵙⵓⴼ",
+      "subtitle": "ⴽⵛⵎ ⵖⵔ ⵓⴽⵙⵓⵎ ⵏⵏⴽ",
+      "email": "ⵉⵎⴰⵢⵍ",
+      "password": "ⴰⵡⴰⵍ ⵉⴼⴼⵔⵏ",
+      "submit": "ⴰⴽⵛⵓⵎ",
+      "withGoogle": "ⴽⵎⵎⵍ ⵙ ⴳⵓⴳⵍ",
+      "or": "ⵏⵉⵖⴷ",
+      "forgotPassword": "ⵜⵜⵓⴷ ⴰⵡⴰⵍ?",
+      "noAccount": "ⵓⵔ ⴷⴰⵔⴽ ⵉⵎⵉⴹⴰⵏ?",
+      "createAccount": "ⵙⴽⵔ ⴰⵎⵉⴹⴰⵏ",
+      "invalidCredentials": "ⵉⵎⴰⵢⵍ ⵏⵉⵖⴷ ⴰⵡⴰⵍ ⵓⵔ ⵉⵙⵏⴼⵍ"
+    },
+    "register": {
+      "title": "ⵙⴽⵔ ⴰⵎⵉⴹⴰⵏ",
+      "subtitle": "ⴷⵔⵓ ⴷ ⵜⴰⵎⵓⵏⵜ ⵏ ⵛⴰⴰⵔⵉⴽ",
+      "name": "ⵉⵙⵎ ⴰⵎⴰⴷⴷⵓⴷ",
+      "email": "ⵉⵎⴰⵢⵍ",
+      "password": "ⴰⵡⴰⵍ ⵉⴼⴼⵔⵏ",
+      "passwordHint": "8 ⵉⵙⴽⴽⵉⵍⵏ ⴷ ⵉⵎⵇⵇⵓⵔⵏ",
+      "submit": "ⵙⵙⴽⵍⵙ",
+      "withGoogle": "ⴽⵎⵎⵍ ⵙ ⴳⵓⴳⵍ",
+      "or": "ⵏⵉⵖⴷ",
+      "hasAccount": "ⵜⴷⴰⵔⴽ ⴰⵎⵉⴹⴰⵏ?",
+      "login": "ⴰⴽⵛⵓⵎ",
+      "recaptcha": "ⴰⵙⵉⵜ ⴰⴷ ⵉⵜⵜⵓⵃⴹⴰ ⵙ reCAPTCHA.",
+      "genericError": "ⵜⵉⵍⵉ ⵜⵓⵛⵛⴹⴰ. ⵄⵔⴹ ⴷⵉⵖ."
+    },
+    "forgotPassword": {
+      "title": "ⵜⵜⵓⴷ ⴰⵡⴰⵍ",
+      "subtitle": "ⴰⵡⵉ ⵉⵏⴱⵍ ⵉ ⵓⵙⵙⵉⴽⵉⵙ ⵏ ⵡⴰⵡⴰⵍ",
+      "email": "ⵉⵎⴰⵢⵍ",
+      "submit": "ⴰⵣⵏ ⵉⵏⴱⵍ",
+      "sent": "ⵎⴽ ⵉⵍⵍⴰ ⵉⵎⴰⵢⵍ ⴷⵖⵉ, ⵏⵣⵏ ⴰⴽ ⵉⵏⴱⵍ.",
+      "backToLogin": "ⵓⵖⴰⵍ ⵖⵔ ⵓⴽⵛⵓⵎ",
+      "recaptcha": "ⴰⵙⵉⵜ ⴰⴷ ⵉⵜⵜⵓⵃⴹⴰ ⵙ reCAPTCHA."
+    }
+  },
   "hero": {
     "badge": "ⵜⴰⵎⵃⵍⴰ ⵜⴰⵎⵢⵓⵔⵜ",
     "title1": "ⵙⴳ",

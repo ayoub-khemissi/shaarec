@@ -2,7 +2,9 @@ import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 import Credentials from "next-auth/providers/credentials";
 import { PrismaAdapter } from "@auth/prisma-adapter";
+import bcrypt from "bcryptjs";
 import { prisma } from "@/infrastructure/database/prisma-client";
+import { loginSchema } from "@/lib/validators/auth";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: PrismaAdapter(prisma),
@@ -18,8 +20,24 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         password: { label: "Mot de passe", type: "password" },
       },
       async authorize(credentials) {
-        // TODO: vérifier email + mot de passe hashé en BDD
-        return null;
+        const parsed = loginSchema.safeParse(credentials);
+        if (!parsed.success) return null;
+
+        const user = await prisma.user.findUnique({
+          where: { email: parsed.data.email },
+        });
+        if (!user || !user.passwordHash) return null;
+
+        const valid = await bcrypt.compare(parsed.data.password, user.passwordHash);
+        if (!valid) return null;
+
+        return {
+          id: user.id,
+          email: user.email,
+          name: user.name,
+          image: user.image,
+          role: user.role,
+        };
       },
     }),
   ],

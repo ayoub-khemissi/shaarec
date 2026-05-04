@@ -1,6 +1,54 @@
 {
   "nav": { "about": "Über uns", "impact": "Wirkung", "methodology": "Programm", "donate": "Spenden", "team": "Team", "menu": "Menü" },
   "theme": { "light": "Heller Modus", "dark": "Dunkler Modus" },
+  "donor": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "donations": "Meine Spenden",
+      "receipts": "Steuerbelege",
+      "reports": "Wirkungsberichte",
+      "logout": "Abmelden"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Willkommen zurück",
+      "subtitle": "Melden Sie sich in Ihrem Spenderbereich an",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "withGoogle": "Mit Google fortfahren",
+      "or": "oder",
+      "forgotPassword": "Passwort vergessen?",
+      "noAccount": "Noch kein Konto?",
+      "createAccount": "Konto erstellen",
+      "invalidCredentials": "Falsche E-Mail oder falsches Passwort"
+    },
+    "register": {
+      "title": "Konto erstellen",
+      "subtitle": "Treten Sie der SHAAREC-Gemeinschaft bei",
+      "name": "Vollständiger Name",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "passwordHint": "Mindestens 8 Zeichen",
+      "submit": "Registrieren",
+      "withGoogle": "Mit Google fortfahren",
+      "or": "oder",
+      "hasAccount": "Bereits ein Konto?",
+      "login": "Anmelden",
+      "recaptcha": "Diese Seite ist durch reCAPTCHA geschützt.",
+      "genericError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "forgotPassword": {
+      "title": "Passwort vergessen",
+      "subtitle": "Erhalten Sie einen Link zum Zurücksetzen Ihres Passworts",
+      "email": "E-Mail",
+      "submit": "Link senden",
+      "sent": "Wenn diese E-Mail existiert, wurde ein Reset-Link gesendet.",
+      "backToLogin": "Zurück zur Anmeldung",
+      "recaptcha": "Diese Seite ist durch reCAPTCHA geschützt."
+    }
+  },
   "hero": {
     "badge": "Aktive Kampagne",
     "title1": "Von",

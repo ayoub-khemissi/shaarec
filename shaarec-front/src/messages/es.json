@@ -7,9 +7,54 @@
     "team": "Equipo",
     "menu": "Menú"
   },
-  "theme": {
-    "light": "Modo claro",
-    "dark": "Modo oscuro"
+  "theme": { "light": "Modo claro", "dark": "Modo oscuro" },
+  "donor": {
+    "nav": {
+      "dashboard": "Panel",
+      "donations": "Mis donaciones",
+      "receipts": "Recibos fiscales",
+      "reports": "Informes de impacto",
+      "logout": "Cerrar sesión"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenido de nuevo",
+      "subtitle": "Inicia sesión en tu espacio de donante",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "submit": "Iniciar sesión",
+      "withGoogle": "Continuar con Google",
+      "or": "o",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "noAccount": "¿No tienes cuenta?",
+      "createAccount": "Crear cuenta",
+      "invalidCredentials": "Correo o contraseña incorrectos"
+    },
+    "register": {
+      "title": "Crear una cuenta",
+      "subtitle": "Únete a la comunidad SHAAREC",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "passwordHint": "Al menos 8 caracteres",
+      "submit": "Registrarse",
+      "withGoogle": "Continuar con Google",
+      "or": "o",
+      "hasAccount": "¿Ya tienes cuenta?",
+      "login": "Iniciar sesión",
+      "recaptcha": "Este sitio está protegido por reCAPTCHA.",
+      "genericError": "Ocurrió un error. Por favor inténtalo de nuevo."
+    },
+    "forgotPassword": {
+      "title": "Contraseña olvidada",
+      "subtitle": "Recibe un enlace para restablecer tu contraseña",
+      "email": "Correo electrónico",
+      "submit": "Enviar enlace",
+      "sent": "Si este correo existe, se ha enviado un enlace de restablecimiento.",
+      "backToLogin": "Volver a iniciar sesión",
+      "recaptcha": "Este sitio está protegido por reCAPTCHA."
+    }
   },
   "hero": {
     "badge": "Campaña activa",

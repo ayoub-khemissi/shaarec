@@ -1,6 +1,54 @@
 {
   "nav": { "about": "Over ons", "impact": "Impact", "methodology": "Programma", "donate": "Doneren", "team": "Team", "menu": "Menu" },
   "theme": { "light": "Lichte modus", "dark": "Donkere modus" },
+  "donor": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "donations": "Mijn donaties",
+      "receipts": "Fiscale ontvangstbewijzen",
+      "reports": "Impactrapporten",
+      "logout": "Uitloggen"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welkom terug",
+      "subtitle": "Log in op uw donateursruimte",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "submit": "Inloggen",
+      "withGoogle": "Doorgaan met Google",
+      "or": "of",
+      "forgotPassword": "Wachtwoord vergeten?",
+      "noAccount": "Nog geen account?",
+      "createAccount": "Account aanmaken",
+      "invalidCredentials": "Onjuiste e-mail of wachtwoord"
+    },
+    "register": {
+      "title": "Account aanmaken",
+      "subtitle": "Word lid van de SHAAREC-gemeenschap",
+      "name": "Volledige naam",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "passwordHint": "Minimaal 8 tekens",
+      "submit": "Registreren",
+      "withGoogle": "Doorgaan met Google",
+      "or": "of",
+      "hasAccount": "Heeft u al een account?",
+      "login": "Inloggen",
+      "recaptcha": "Deze site wordt beschermd door reCAPTCHA.",
+      "genericError": "Er is iets misgegaan. Probeer het opnieuw."
+    },
+    "forgotPassword": {
+      "title": "Wachtwoord vergeten",
+      "subtitle": "Ontvang een link om uw wachtwoord te resetten",
+      "email": "E-mail",
+      "submit": "Link verzenden",
+      "sent": "Als dit e-mailadres bestaat, is een resetlink verzonden.",
+      "backToLogin": "Terug naar inloggen",
+      "recaptcha": "Deze site wordt beschermd door reCAPTCHA."
+    }
+  },
   "hero": {
     "badge": "Actieve campagne",
     "title1": "Van",

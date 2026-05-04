@@ -8,6 +8,7 @@ import { HeartIcon, XCloseIcon, MenuIcon } from "@/components/ui/Icons";
 import { Logo } from "./Logo";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { UserMenu } from "./UserMenu";
 
 const NAV_KEYS = [
   { key: "about", href: "#about" },
@@ -55,6 +56,7 @@ export function Header() {
             </nav>
 
             <div className="flex items-center gap-2">
+              <UserMenu />
               <LanguageSwitcher />
               <ThemeSwitcher />
               <AppButton

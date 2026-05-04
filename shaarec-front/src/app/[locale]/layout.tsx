@@ -6,8 +6,6 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { rtlLocales, type Locale } from "@/i18n/config";
 import { Providers } from "../providers";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
 
 // Latin — Titres : Sora ExtraBold / Contenu : Lexend Regular
@@ -73,11 +71,7 @@ export default async function LocaleLayout({
       <body className="bg-background text-foreground antialiased">
         <Providers>
           <NextIntlClientProvider messages={messages}>
-            <Header />
-            <div className="snap-container">
-              <main>{children}</main>
-              <Footer />
-            </div>
+            {children}
           </NextIntlClientProvider>
         </Providers>
       </body>

@@ -11,6 +11,54 @@
     "light": "Mode clair",
     "dark": "Mode sombre"
   },
+  "donor": {
+    "nav": {
+      "dashboard": "Tableau de bord",
+      "donations": "Mes dons",
+      "receipts": "Reçus fiscaux",
+      "reports": "Rapports d'impact",
+      "logout": "Déconnexion"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bon retour",
+      "subtitle": "Connectez-vous à votre espace donateur",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "withGoogle": "Continuer avec Google",
+      "or": "ou",
+      "forgotPassword": "Mot de passe oublié ?",
+      "noAccount": "Pas encore de compte ?",
+      "createAccount": "Créer un compte",
+      "invalidCredentials": "Email ou mot de passe incorrect"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "subtitle": "Rejoignez la communauté SHAAREC",
+      "name": "Nom complet",
+      "email": "Email",
+      "password": "Mot de passe",
+      "passwordHint": "Au moins 8 caractères",
+      "submit": "S'inscrire",
+      "withGoogle": "Continuer avec Google",
+      "or": "ou",
+      "hasAccount": "Vous avez déjà un compte ?",
+      "login": "Se connecter",
+      "recaptcha": "Ce site est protégé par reCAPTCHA.",
+      "genericError": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "forgotPassword": {
+      "title": "Mot de passe oublié",
+      "subtitle": "Recevez un lien pour réinitialiser votre mot de passe",
+      "email": "Email",
+      "submit": "Envoyer le lien",
+      "sent": "Si cet email existe, un lien de réinitialisation a été envoyé.",
+      "backToLogin": "Retour à la connexion",
+      "recaptcha": "Ce site est protégé par reCAPTCHA."
+    }
+  },
   "hero": {
     "badge": "Campagne active",
     "title1": "De",
