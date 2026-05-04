@@ -8,6 +8,7 @@
  */
 
 @layer base {
+
   /* ─── SHAAREC Light ─── */
   [data-theme="shaarec"] {
     color-scheme: light;
@@ -32,13 +33,16 @@
     --field-radius: calc(var(--radius) * 1.5);
 
     /* ── Base ── */
-    --background: oklch(0.975 0.008 75);        /* Sable très clair */
-    --foreground: oklch(0.22 0.02 55);           /* Brun foncé */
+    --background: oklch(0.975 0.008 75);
+    /* Sable très clair */
+    --foreground: oklch(0.22 0.02 55);
+    /* Brun foncé */
 
     /* ── Surface ── */
     --surface: var(--white);
     --surface-foreground: var(--foreground);
-    --surface-secondary: oklch(0.96 0.01 75);    /* Sable pâle */
+    --surface-secondary: oklch(0.96 0.01 75);
+    /* Sable pâle */
     --surface-secondary-foreground: var(--foreground);
     --surface-tertiary: oklch(0.94 0.015 75);
     --surface-tertiary-foreground: var(--foreground);
@@ -48,16 +52,18 @@
     --overlay-foreground: var(--foreground);
 
     /* ── Muted ── */
-    --muted: oklch(0.58 0.03 65);               /* Sable moyen */
+    --muted: oklch(0.58 0.03 65);
+    /* Sable moyen */
     --scrollbar: oklch(0.85 0.015 75);
 
     /* ── Default ── */
     --default: oklch(0.93 0.012 75);
     --default-foreground: var(--foreground);
 
-    /* ── Accent : Vert oasis ── */
-    --accent: oklch(0.70 0.15 155);              /* Vert oasis doux */
-    --accent-foreground: var(--snow);
+    /* ── Accent : Vert pomme ── */
+    --accent: #9df07f;
+    /* Vert pomme clair */
+    --accent-foreground: var(--eclipse);
 
     /* ── Form Fields ── */
     --field-background: var(--white);
@@ -66,13 +72,16 @@
     --field-border: oklch(0.88 0.015 75);
 
     /* ── Status ── */
-    --success: oklch(0.68 0.17 150);             /* Vert frais */
+    --success: oklch(0.68 0.17 150);
+    /* Vert frais */
     --success-foreground: var(--eclipse);
 
-    --warning: oklch(0.78 0.15 72);              /* Ambre/or du désert */
+    --warning: oklch(0.78 0.15 72);
+    /* Ambre/or du désert */
     --warning-foreground: var(--eclipse);
 
-    --danger: oklch(0.62 0.22 25);               /* Rouge terre */
+    --danger: oklch(0.62 0.22 25);
+    /* Rouge terre */
     --danger-foreground: var(--snow);
 
     /* ── Component ── */
@@ -126,13 +135,16 @@
     --field-radius: calc(var(--radius) * 1.5);
 
     /* ── Base ── */
-    --background: oklch(0.14 0.012 55);          /* Nuit saharienne profonde */
-    --foreground: oklch(0.94 0.008 75);          /* Sable clair */
+    --background: oklch(0.14 0.012 55);
+    /* Nuit saharienne profonde */
+    --foreground: oklch(0.94 0.008 75);
+    /* Sable clair */
 
     /* ── Surface ── */
     --surface: oklch(0.19 0.012 55);
     --surface-foreground: var(--foreground);
-    --surface-secondary: oklch(0.22 0.012 55);   /* Sections alternées — visible vs background */
+    --surface-secondary: oklch(0.22 0.012 55);
+    /* Sections alternées — visible vs background */
     --surface-secondary-foreground: var(--foreground);
     --surface-tertiary: oklch(0.25 0.01 55);
     --surface-tertiary-foreground: var(--foreground);
@@ -149,8 +161,8 @@
     --default: oklch(0.28 0.01 55);
     --default-foreground: var(--foreground);
 
-    /* ── Accent : Vert oasis lumineux ── */
-    --accent: oklch(0.72 0.14 155);
+    /* ── Accent : Vert pomme lumineux ── */
+    --accent: #9df07f;
     --accent-foreground: var(--eclipse);
 
     /* ── Form Fields ── */

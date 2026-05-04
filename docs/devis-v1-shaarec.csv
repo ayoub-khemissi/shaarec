@@ -1,0 +1,11 @@
+﻿Phase;Prestation;Description;Montant (EUR)
+Conception;Direction artistique & design system;Identité visuelle, palette, typographie, composants UI réutilisables;600
+Développement;Site vitrine multilingue;Pages publiques (accueil, à propos, équipe, méthodologie, transparence, contact) en 7 langues (FR/AR/EN/ES/NL/DE/Tamazight) avec support RTL pour l'arabe;900
+Développement;Plateforme de dons;Page de don (packs prédéfinis + montant libre), dons ponctuels & récurrents, intégration paiement Stripe, barre de progression par campagne;800
+Développement;Espace donateur;Création de compte, historique des dons, génération de reçus fiscaux PDF, gestion des dons récurrents;700
+Développement;Back-office d'administration;Gestion du contenu (pages, blog), suivi des dons, gestion des campagnes, modération, rapports d'impact;700
+Développement;Blog;Articles avec auteur, vues, temps de lecture, commentaires modérés;300
+Mise en ligne;Hébergement & déploiement;Configuration serveur, certificat SSL, mise en production, tests de bout en bout;250
+Livraison;Formation & documentation;Formation de l'équipe SHAAREC à l'utilisation du back-office, guide d'utilisation;250
+;;;
+;;TOTAL TTC;4500

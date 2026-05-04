@@ -10,9 +10,9 @@
   --color-sand: oklch(0.92 0.025 75);
   --color-sand-light: oklch(0.96 0.012 75);
   --color-sand-dark: oklch(0.82 0.035 70);
-  --color-oasis: oklch(0.52 0.14 155);
-  --color-oasis-light: oklch(0.72 0.10 155);
-  --color-oasis-dark: oklch(0.38 0.12 155);
+  --color-oasis: oklch(0.55 0.16 135);
+  --color-oasis-light: #9df07f;
+  --color-oasis-dark: oklch(0.40 0.14 135);
   --color-earth: oklch(0.45 0.06 55);
   --color-earth-light: oklch(0.60 0.05 55);
   --color-sahara: oklch(0.75 0.18 55);
